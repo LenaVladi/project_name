@@ -9,8 +9,8 @@
     "test": "mocha ./tests/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .",
-    "build": "rm -r dist || true && parcel dist src/index.html --out-dir dist",
-    "deploy": "gh-pages -d dist"
+    "build": "rm -r dist || true && parcel build src/index.html --out-dir dist --public-url ./",
+    "deploy": "gh-pages -d dist --remote my-origin"
   },
   "keywords": [
     "github-actions"
